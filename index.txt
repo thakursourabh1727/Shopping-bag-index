@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>KRIPLING - ONLINE STORE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+        <div class="header no-shadow">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo">
+                            <h1>Kripling</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 pull-right">
+                            <form action="search.html" method="POST">
+                                <input type="text" name="search" class="input-lg col-sm-12" placeholder="search"/>
+                            </form>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 text-center pull-right">
+                        <a href="#" onclick="toggleMenu();" id="toggleMenu" class="btn btn-primary input-lg bg-transparent-dark-light">Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>
+                                <a class="active" href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="./signup.html">Signup</a>
+                            </li>
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.header_menu = false;
+            function toggleMenu(){
+                var btn = document.querySelector("#toggleMenu");
+                var header_menu = document.querySelector(".header-menu");
+                var header_menu_container = document.querySelector(".header-menu>.container-fluid");
+                if(window.header_menu){
+                    window.header_menu=false;
+                    btn.innerHTML = "Menu";
+                    header_menu_container.style.transform="translateY(-100%)";
+                    setTimeout(function(){
+                        header_menu.style.display="none";
+                    },300);
+                }else{
+                    window.header_menu=true;
+                    header_menu.style.display="block";
+                    btn.innerHTML = "&times;";
+                    setTimeout(function(){
+                        header_menu_container.style.transform="translateY(0%)";
+                    },300);
+                }
+            }
+        </script>
+        <div class="main">
+            <div class="parallax box box-lg col-sm-12 no-shadow" style="background-image:url(assets/imgs/handbag-model.jpg);background-position:right center;">
+                <div class="box-inner text-white col-sm-5">
+                    <h1>HANDBAGS</h1>
+                    <p class="box-description">We know you love versatility, easy organisation and prints with personality, so we’ve designed a bag with you in mind...</p>
+                    <a href="handbags.html" class="btn btn-primary input-lg">SHOP HANDBAGS</a>
+                </div>
+            </div>
+            <table cellpadding="10px">
+                <tr>
+                    <td><img src="assets/imgs/1.jpg" class="img-responsive"/></td>
+                    <td></td>
+                    <td><img src="assets/imgs/2.jpg" class="img-responsive"/></td>
+                    <td></td>
+                    <td><img src="assets/imgs/3.jpg" class="img-responsive"/></td>
+                </tr>
+                <tr>
+                    <td class="text-center h3">SHOULDER BAGS</td>
+                    <td></td>
+                    <td class="text-center h3">KRIPLING CLASSICS</td>
+                    <td></td>
+                    <td class="text-center h3">BESTSELLERS</td>
+                </tr>
+                <tr>
+                    <td class="text-center">Colours that match every outfit.</td>
+                    <td></td>
+                    <td class="text-center">Keep style by your side and stay prepared for your busy schedule with these unforgettable bags.</td>
+                    <td></td>
+                    <td class="text-center">Elevate your look with a stylish companion — a Kipling shoulder bag.</td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <a href="handbags.html"><STRONG>DISCOVER MORE</STRONG></a>
+                    </td>
+                    <td></td>
+                    <td class="text-center">
+                        <a href="handbags.html"><STRONG>DISCOVER MORE</STRONG></a>
+                    </td>
+                    <td></td>
+                    <td class="text-center">
+                        <a href="handbags.html"><STRONG>DISCOVER MORE</STRONG></a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <img src="assets/imgs/5.jpg" class="img-responsive"/>
+                    </td>
+                    <td>
+                        <table cellpadding="10px" style="max-width:300px" class="text-center">
+                            <tr>
+                                <td>
+                                    <img src="assets/imgs/6.jpg" style="max-width:300px;"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Backpack for Kids</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    
+                                The Clas Seoul is a stylish and sturdy companion that covers important storage needs. The roomy main pocket has padded laptop storage, while the soft straps offer comfort when carrying heavy loads.                            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="handbags.html" class="btn btn-primary input-lg">SHOP NOW</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer no-shadow">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        &copy; Kripling 2017.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
